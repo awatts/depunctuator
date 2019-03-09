@@ -11,13 +11,18 @@
         </b-row>
         <b-row>
             <b-col>
-                <textarea v-model="usertext" rows="10" cols="60"></textarea>
+                <textarea v-model="usertext" rows="10" cols="60" ></textarea>
             </b-col>
             <b-col>
-                <article class="replacement">
+                <article class="shadow p-3 mb-5 bg-white rounded">
                 <p v-for="(para, index) in strippedText.split('\n\n')" :key="index">{{para}}</p>
                 </article>
             </b-col>
+        </b-row>
+        <b-row>
+            <footer>
+                <p class="text-muted credit">Copyright 2019 - Andrew Watts&nbsp;<a href="https://github.com/awatts/depunctuator"><font-awesome-icon :icon="['fab', 'github']" ></font-awesome-icon></a></p>
+            </footer>
         </b-row>
     </b-container>
 </template>
@@ -46,7 +51,7 @@ We hold these truths to be self-evident, that all men are created equal, that th
 
 textarea {
   padding: 1em;
-  min-height: 85%;
+  min-height: 90%;
 }
 
 article {
@@ -55,5 +60,17 @@ article {
 
 p {
   margin-bottom: 1em;
+}
+
+a {
+  color: black;
+}
+
+a:active {
+  color: gray;
+}
+
+a:visited {
+  color: black;
 }
 </style>
