@@ -1,13 +1,25 @@
 <template>
-    <div id="app">
-    <div class="box">
-        <textarea v-model="usertext" rows="10" cols="60"></textarea>
-        <hr/>
-        <article class="replacement">
-        <p v-for="(para, index) in strippedText.split('\n\n')" :key="index">{{para}}</p>
-        </article>
-    </div>
-    </div>
+    <b-container>
+        <b-row>
+            <b-col>
+                <h1>Depunctuator</h1>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col><h2>Type here!</h2></b-col>
+            <b-col><h2>Result here!</h2></b-col>
+        </b-row>
+        <b-row>
+            <b-col>
+                <textarea v-model="usertext" rows="10" cols="60"></textarea>
+            </b-col>
+            <b-col>
+                <article class="replacement">
+                <p v-for="(para, index) in strippedText.split('\n\n')" :key="index">{{para}}</p>
+                </article>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
@@ -23,39 +35,21 @@ We hold these truths to be self-evident, that all men are created equal, that th
     }
   },
   computed: {
-  	strippedText: function() {
-    	return this.usertext.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()@—]/g,"");
+    strippedText: function() {
+        return this.usertext.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()@—]/g,"");
     }
   }
 }
 </script>
 
 <style scoped>
-body {
-  background: #20262E;
-  padding: 20px;
-  font-family: Helvetica;
-}
-
-#app {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  transition: all 0.2s;
-}
-
-.box {
-  display: flex;
-  justify-content: space-between;
-}
 
 textarea {
-  flex: 200px;
   padding: 1em;
+  min-height: 85%;
 }
 
 article {
-  flex: 200px;
   padding: 1em;
 }
 
