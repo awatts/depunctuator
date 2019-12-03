@@ -41,7 +41,7 @@ We hold these truths to be self-evident, that all men are created equal, that th
   },
   computed: {
     strippedText: function() {
-        return this.usertext.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()@—]/g,"");
+        return this.usertext.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-\?_'"`~()@—]/g,"");
     }
   }
 }
