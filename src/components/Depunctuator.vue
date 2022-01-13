@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'Depunctuator',
+  name: 'DePunctuator',
   data: function() {
       return {
     usertext: `The unanimous Declaration of the thirteen united States of America

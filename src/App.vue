@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Depunctuator/>
+    <DePunctuator/>
   </div>
 </template>
 
 <script>
-import Depunctuator from './components/Depunctuator.vue'
+import DePunctuator from './components/Depunctuator.vue'
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -22,7 +22,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 export default {
   name: 'app',
   components: {
-    Depunctuator
+    DePunctuator
   }
 }
 </script>
