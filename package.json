@@ -14,16 +14,16 @@
     "@fortawesome/vue-fontawesome": "2.0.6",
     "bootstrap-vue": "^2.0.0-rc.14",
     "jquery": "^3.6.0",
-    "vue": "^2.6.10",
+    "vue": "^2.6.14",
     "yarn": "^1.22.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.14",
-    "@vue/cli-plugin-eslint": "4.5.15",
-    "@vue/cli-service": "^4.5.13",
+    "@vue/cli-plugin-babel": "~5.0.4",
+    "@vue/cli-plugin-eslint": "~5.0.4",
+    "@vue/cli-service": "~5.0.4",
     "babel-eslint": "^10.0.1",
     "eslint": "7.32.0",
-    "eslint-plugin-vue": "8.3.0",
+    "eslint-plugin-vue": "^8.6.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
