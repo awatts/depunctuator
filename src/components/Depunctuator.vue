@@ -21,7 +21,7 @@
         </b-row>
         <b-row>
             <footer>
-                <p class="text-muted credit">Copyright 2019 - Andrew Watts&nbsp;<a href="https://github.com/awatts/depunctuator"><font-awesome-icon :icon="['fab', 'github']" ></font-awesome-icon></a></p>
+                <p class="text-muted credit">Copyright 2019-2025 - Andrew Watts&nbsp;<a href="https://github.com/awatts/depunctuator"><font-awesome-icon :icon="['fab', 'github']" ></font-awesome-icon></a></p>
             </footer>
         </b-row>
     </b-container>
