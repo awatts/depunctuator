@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <DePunctuator/>
+    <DePunctuator />
   </div>
 </template>
 
@@ -17,10 +17,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faGithub)
 
 Vue.use(BootstrapVue)
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('FontAwesomeIcon', FontAwesomeIcon)
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     DePunctuator
   }

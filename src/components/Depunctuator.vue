@@ -1,30 +1,41 @@
 <template>
-    <b-container>
-        <b-row>
-            <b-col>
-                <h1>Depunctuator</h1>
-            </b-col>
-        </b-row>
-        <b-row>
-            <b-col><h2>Type here!</h2></b-col>
-            <b-col><h2>Result here!</h2></b-col>
-        </b-row>
-        <b-row>
-            <b-col>
-                <textarea v-model="usertext" rows="10" cols="60" ></textarea>
-            </b-col>
-            <b-col>
-                <article class="shadow p-3 mb-5 bg-white rounded">
-                <p v-for="(para, index) in strippedText.split('\n\n')" :key="index">{{para}}</p>
-                </article>
-            </b-col>
-        </b-row>
-        <b-row>
-            <footer>
-                <p class="text-muted credit">Copyright 2019-2025 - Andrew Watts&nbsp;<a href="https://github.com/awatts/depunctuator"><font-awesome-icon :icon="['fab', 'github']" ></font-awesome-icon></a></p>
-            </footer>
-        </b-row>
-    </b-container>
+  <b-container>
+    <b-row>
+      <b-col>
+        <h1>Depunctuator</h1>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col><h2>Type here!</h2></b-col>
+      <b-col><h2>Result here!</h2></b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <textarea
+          v-model="usertext"
+          rows="10"
+          cols="60"
+        />
+      </b-col>
+      <b-col>
+        <article class="shadow p-3 mb-5 bg-white rounded">
+          <p
+            v-for="(para, index) in strippedText.split('\n\n')"
+            :key="index"
+          >
+            {{ para }}
+          </p>
+        </article>
+      </b-col>
+    </b-row>
+    <b-row>
+      <footer>
+        <p class="text-muted credit">
+          Copyright 2019-2026 - Andrew Watts&nbsp;<a href="https://github.com/awatts/depunctuator"><font-awesome-icon :icon="['fab', 'github']" /></a>
+        </p>
+      </footer>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
