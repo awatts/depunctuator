@@ -7,16 +7,14 @@
 <script>
 import DePunctuator from './components/Depunctuator.vue'
 import Vue from '@vue/compat/dist/vue.esm-bundler.js'
-import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faGithub)
 
-Vue.use(BootstrapVue)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)
 
 export default {
