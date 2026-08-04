@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from '@vue/compat/dist/vue.esm-bundler.js'
 import App from './App.vue'
 
 Vue.config.productionTip = false

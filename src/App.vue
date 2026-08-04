@@ -6,7 +6,7 @@
 
 <script>
 import DePunctuator from './components/Depunctuator.vue'
-import Vue from 'vue'
+import Vue from '@vue/compat/dist/vue.esm-bundler.js'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
