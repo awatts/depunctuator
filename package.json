@@ -16,7 +16,7 @@
     "@fortawesome/vue-fontawesome": "^3",
     "@vue/compat": "^3.1.0",
     "bootstrap": "^5.3.8",
-    "bootstrap-vue-next": "^0.45.9",
+    "bootstrap-vue-next": "^0.46.1",
     "jquery": "^4",
     "vue": "^3.1.10",
     "yarn": "^1.22.22"
